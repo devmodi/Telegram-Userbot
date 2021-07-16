@@ -1,0 +1,5 @@
+chat_bot.session
+.env
+devmo.session
+__pycache__/config.cpython-39.pyc
+__pycache__/db.cpython-39.pyc
