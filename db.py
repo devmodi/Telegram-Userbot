@@ -7,10 +7,11 @@ db = client.telegramDatabase
 collection = db.telegramCollection
 
 
-def save_db(post):
-    collection.insert_one(post)
+def save_posts_in_db(posts):
+    collection.insert_many(posts)
 
-def get_db():
+
+def get_users_from_db():
     usernames = []
     for post in collection.find():
         usernames.append(post['username'])
